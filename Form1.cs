@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,10 @@ using System.Data.SqlClient;
 
 namespace S31_Prak_2
 {
-    public partial class Form1 : Form
+     public partial class Form1 : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Visual_Studio_Projects\S31_Prak_2\Database1.mdf;Integrated Security=True");
+
         public Form1()
         {
             InitializeComponent();
@@ -64,7 +66,7 @@ namespace S31_Prak_2
 
             
             SqlCommand cmd = new SqlCommand
-                ("update TAB1 set model=@a2, march=@a3, days=@a4, timeL=@a5, raz_vrem=@a65, price_m=@a7, skid=@a8 where id=@a1", con);
+                ("update TAB1 set model=@a2, march=@a3, days=@a4, timeL=@a5, raz_vrem=@a6, price_m=@a7, skid=@a8 where id=@a1", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@a1", textBox1.Text);
             cmd.Parameters.AddWithValue("@a2", textBox2.Text);
