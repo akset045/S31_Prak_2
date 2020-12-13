@@ -64,15 +64,16 @@ namespace S31_Prak_2
 
             
             SqlCommand cmd = new SqlCommand
-                ("update TAB1 set model=@a1, march=@a2, days=@a3, timeL=@a4, raz_vrem=@a5, price_m=@a6, skid=@a7 where id=@a7", con);
+                ("update TAB1 set model=@a2, march=@a3, days=@a4, timeL=@a5, raz_vrem=@a65, price_m=@a7, skid=@a8 where id=@a1", con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@a7", textBox1.Text);
-            cmd.Parameters.AddWithValue("@a1", textBox2.Text);
-            cmd.Parameters.AddWithValue("@a2", textBox3.Text);
-            cmd.Parameters.AddWithValue("@a3", textBox4.Text);
-            cmd.Parameters.AddWithValue("@a4", textBox5.Text);
-            cmd.Parameters.AddWithValue("@a5", textBox6.Text);
-            cmd.Parameters.AddWithValue("@a6", textBox10.Text);
+            cmd.Parameters.AddWithValue("@a1", textBox1.Text);
+            cmd.Parameters.AddWithValue("@a2", textBox2.Text);
+            cmd.Parameters.AddWithValue("@a3", textBox3.Text);
+            cmd.Parameters.AddWithValue("@a4", textBox4.Text);
+            cmd.Parameters.AddWithValue("@a5", textBox5.Text);
+            cmd.Parameters.AddWithValue("@a6", textBox6.Text);
+            cmd.Parameters.AddWithValue("@a7", textBox7.Text);
+            cmd.Parameters.AddWithValue("@a8", textBox10.Text);
 
             // cmd.CommandText = "update TAB1 set model='"+ textBox2.Text + "', march = '" + textBox3.Text + "', days='"+ textBox4.Text + "', timeL= '"+ textBox5.Text +"' ,raz_vrem = '"+ textBox6.Text+ "', price_m='"+ textBox7.Text + ", tab1.skid= '" + textBox10.Text + "' where id='" + textBox1.Text + "'";
             con.Open();
