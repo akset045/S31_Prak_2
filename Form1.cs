@@ -72,6 +72,7 @@ namespace S31_Prak_2
             MessageBox.Show("Готово. Данные обновлены.");
         }
 
+        // 77777
         private void button4_Click(object sender, EventArgs e)
         {
             con.Open();
