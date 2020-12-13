@@ -316,7 +316,7 @@ namespace S31_Prak_2
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(306, 71);
             this.button6.TabIndex = 36;
-            this.button6.Text = "Самя большая разница по времени";
+            this.button6.Text = "Самая большая разница по времени";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
