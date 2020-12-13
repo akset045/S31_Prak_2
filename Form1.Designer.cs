@@ -32,7 +32,7 @@ namespace S31_Prak_2
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@ namespace S31_Prak_2
             // 
             this.tabPage1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.textBox10);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.button2);
@@ -113,12 +113,12 @@ namespace S31_Prak_2
             this.label8.TabIndex = 35;
             this.label8.Text = "Скидка для пенсионеро";
             // 
-            // textBox8
+            // textBox10
             // 
-            this.textBox8.Location = new System.Drawing.Point(258, 93);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 34;
+            this.textBox10.Location = new System.Drawing.Point(258, 93);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 34;
             // 
             // button3
             // 
@@ -398,7 +398,7 @@ namespace S31_Prak_2
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox10;
     }
 }
 

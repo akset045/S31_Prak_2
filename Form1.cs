@@ -25,7 +25,7 @@ namespace S31_Prak_2
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into TAB1 (id, model, march, days, timeL,raz_vrem, price_m, skid) values " + "(" + textBox1.Text + ",'" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','"+ textBox6.Text + "','" + textBox7.Text + "','" + textBox8.Text + "')";
+            cmd.CommandText = "insert into TAB1 (id, model, march, days, timeL,raz_vrem, price_m, skid) values " + "(" + textBox1.Text + ",'" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','"+ textBox6.Text + "','" + textBox7.Text + "','" + textBox10.Text + "')";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_d();
@@ -65,7 +65,7 @@ namespace S31_Prak_2
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update TAB1 set model='"+ textBox2.Text + "', march = '" + textBox3.Text + "', days='"+ textBox4.Text + "', timeL= '"+ textBox5.Text +"' ,raz_vrem = '"+ textBox6.Text+ "', price_m='"+ textBox7.Text + ", skid= '"+ textBox8.Text +"' where id='" + textBox1.Text + "'";
+            cmd.CommandText = "update TAB1 set model='"+ textBox2.Text + "', march = '" + textBox3.Text + "', days='"+ textBox4.Text + "', timeL= '"+ textBox5.Text +"' ,raz_vrem = '"+ textBox6.Text+ "', price_m='"+ textBox7.Text + ", tab1.skid= '"+ textBox10.Text +"' where id='" + textBox1.Text + "';";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_d();
