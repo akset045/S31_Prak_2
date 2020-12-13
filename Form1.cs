@@ -19,7 +19,7 @@ namespace S31_Prak_2
         public Form1()
         {
             InitializeComponent();
-            disp_d();
+             disp_d();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace S31_Prak_2
             cmd.CommandText = "insert into TAB1 (id, model, march, days, timeL,raz_vrem, price_m, skid) values " + "(" + textBox1.Text + ",'" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','"+ textBox6.Text + "','" + textBox7.Text + "','" + textBox10.Text + "')";
             cmd.ExecuteNonQuery();
             con.Close();
-            disp_d();
+           disp_d();
             MessageBox.Show("Готово. Данные внесены.");
 
         }
