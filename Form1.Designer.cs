@@ -328,7 +328,7 @@ namespace S31_Prak_2
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(284, 73);
             this.button5.TabIndex = 35;
-            this.button5.Text = "Цена билета дляпенсионеров,";
+            this.button5.Text = "Цена билета для пенсионеров,";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
