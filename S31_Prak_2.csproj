@@ -51,7 +51,7 @@
     <StartupObject>S31_Prak_2.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Transistor_A1A1A3A2A5_P5Y6W2.ico</ApplicationIcon>
+    <ApplicationIcon>icon_t2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -109,7 +109,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Transistor_A1A1A3A2A5_P5Y6W2.ico" />
+    <Content Include="icon_t2.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
